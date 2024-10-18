@@ -1,17 +1,17 @@
-public class mainJugador {
 
-    public static void main(String[]arg){
+public class mainJugador{
+public static void main(String[] args) {
+    jugador jugador = new jugador();
+    jugador jugador2= new jugador();
+    jugador jugador3= new jugador("Joseph", 14,"peru");
 
-         jugador j1=new jugador();
-         jugador j2= new jugador("Lucas", 24,"Peru");
-        System.out.printf("---------------Jugador 1------------------");
-         j1.patear();
-         j1.correr();
+    jugador.ingresarDatos();
+    System.out.printf("----------jugador-----------\n");
+    jugador.patear();
+    System.out.printf("\n----------jugador 2-----------");
+    jugador2.patear();
+    System.out.printf("\n----------jugador 3-----------");
+    jugador3.saltar();
 
-        System.out.printf("\n ---------Jugador 2-------");
-         j2.correr();
-         j2.patear();
-         j2.saltar(4);
-         j2.saltar(5);
-    }
+}
 }
